@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -12,10 +13,10 @@ pipeline {
         stage('Build & Execute Script') {
             steps {
                 echo 'Checking Python installation...'
-                bat 'python --version'
+                bat '"C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" --version'
 
                 echo 'Running first.py...'
-                bat 'python first.py'
+                bat '"C:\\Users\\STUDENT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" first.py'
             }
         }
 
