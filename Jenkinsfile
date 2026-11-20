@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -13,7 +12,7 @@ pipeline {
         stage('Build & Execute Script') {
             steps {
                 echo 'Running first.py...'
-                bat '"C:\\Users\\STUDENT\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" first.py'
+                bat C:/Users/STUDENT/AppData/Local/Microsoft/WindowsApps/python.exe first.py'
             }
         }
 
